@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Endereço</title>
+</head>
+<body>
+    <form>
+        <!-- CEP -->
+        <label for="cep">CEP *</label>
+        <input id="cep" name="cep" type="text" maxlength="9" placeholder="00000-000" required>
+
+        <!-- Logradouro -->
+        <label for="logradouro">Logradouro *</label>
+        <input id="logradouro" name="logradouro" type="text" minlength="5" required placeholder="Ex: Avenida Central">
+
+        <!-- Número -->
+        <label for="numero">Número *</label>
+        <input id="numero" name="numero" type="text" pattern="^\d+$" required placeholder="Ex: 123">
+
+        <!-- UF -->
+        <label for="uf">UF *</label>
+        <input id="uf" name="uf" type="text" maxlength="2" minlength="2" pattern="^[A-Z]{2}$" required placeholder="Ex: SP" style="text-transform:uppercase">
+
+        <!-- Complemento (opcional) -->
+        <label for="complemento">Complemento</label>
+        <input id="complemento" name="complemento" type="text" placeholder="Ex: Ap 101 / Bloco B">
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
